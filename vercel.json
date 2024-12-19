@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ],
+  "customDomains": {
+    "message": "No custom domains assigned. Configure in Project Settings or use 'vercel domains add <domain>'"
+  }
+}
+
